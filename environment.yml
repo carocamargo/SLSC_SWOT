@@ -1,0 +1,20 @@
+name: SLSC_SWOT
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11   # optional: choose version explicitly if needed
+  - jupyterlab
+  - cartopy
+  - matplotlib
+  - cmocean
+  - pandas
+  - xarray
+  - zarr<3
+  - fsspec
+  - geopandas
+  - shapely
+  - ftplib
+  - pip
+  - pip:
+      - copernicusmarine
