@@ -74,17 +74,33 @@ If this doesn't work, you could also try setting the channel priority to flexibl
 
 ## Mamba/conda issues work around
 On my case, my base environment was inconsistent, and I was not able to install mamba. A work around was to create a new enviroment and install mamba:
+
 ```conda create -n mamba-env -c conda-forge mamba python=3.10```
+
 and then use that environment to install things on my other one:
+
 ``` conda activate mamba-env```
-Install packages
-```mamba install -n SLSC_SWOT -c conda-forge jupyterlab cartopy matplotlib cmocean pandas```
+
+Install packages:
+
+``` mamba install -n SLSC_SWOT -c conda-forge jupyterlab```
+
+```mamba install -n SLSC_SWOT -c conda-forge cartopy matplotlib cmocean pandas```
+
 ``` mamba install -n SLSC_SWOT -c conda-forge xarray "zarr<3" fsspec```
-Leave the mamba environment
+
+Leave the mamba environment:
+
 ``` conda deactivate ```
+
 Enter SWOT environment:
+
 ```  conda activate SLSC_SWOT ```
+
 Install marinecopernicus with pip:
+
 ```pip install copernicusmarine  ```
+
 Launch Jupyter Lab:
+
 ```jupyter lab```
