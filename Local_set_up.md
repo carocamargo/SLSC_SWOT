@@ -26,7 +26,6 @@ You can then skip the [python-set-up](#python-set-up))
 4. Activate it:
 ```conda activate SLCS_SWOT```
 
-(dependencies)=
 ## Python Set Up
 Next, we'll install python packages needed for the tutorial:
 
@@ -57,8 +56,8 @@ If using ```mamba```, the command line syntax to install the packages is:
 mamba activate SLCS_SWOT
 
 ## install required dependencies
-mamba install -c conda-forge jupyterlab cartopy matplotlib cmocean os pandas
-mamba install -c conda-forge xarray zarr<3 fsspec
+mamba install -c conda-forge jupyterlab cartopy matplotlib cmocean pandas
+mamba install -c conda-forge xarray "zarr<3" fsspec
 
 ## Install copernicusmarine from PyPI
 pip install copernicusmarine
@@ -73,4 +72,19 @@ mamba install -c conda-forge geopandas shapely ftplib getpass
 If you're using conda and the ```conda install ...``` / ```conda env update ...``` commands are taking a long time, you could try [updating the solver to "libmamba"](https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community).
 If this doesn't work, you could also try setting the channel priority to flexible, with ```conda config --set channel_priority flexible```.
 
-
+## Mamba/conda issues work around
+On my case, my base environment was inconsistent, and I was not able to install mamba. A work around was to create a new enviroment and install mamba:
+```conda create -n mamba-env -c conda-forge mamba python=3.10```
+and then use that environment to install things on my other one:
+``` conda activate mamba-env```
+Install packages
+```mamba install -n SLSC_SWOT -c conda-forge jupyterlab cartopy matplotlib cmocean pandas```
+``` mamba install -n SLSC_SWOT -c conda-forge xarray "zarr<3" fsspec```
+Leave the mamba environment
+``` conda deactivate ```
+Enter SWOT environment:
+```  conda activate SLSC_SWOT ```
+Install marinecopernicus with pip:
+```pip install copernicusmarine  ```
+Launch Jupyter Lab:
+```jupyter lab```
