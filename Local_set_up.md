@@ -57,7 +57,7 @@ mamba activate SLCS_SWOT
 
 ## install required dependencies
 mamba install -c conda-forge jupyterlab cartopy matplotlib cmocean pandas
-mamba install -c conda-forge xarray "zarr<3" fsspec
+mamba install -c conda-forge xarray "zarr<3" fsspec tqdm
 
 ## Install copernicusmarine from PyPI
 pip install copernicusmarine
@@ -87,7 +87,7 @@ Install packages:
 
 ```mamba install -n SLSC_SWOT -c conda-forge cartopy matplotlib cmocean pandas```
 
-``` mamba install -n SLSC_SWOT -c conda-forge xarray "zarr<3" fsspec```
+``` mamba install -n SLSC_SWOT -c conda-forge xarray "zarr<3" fsspec tqdm```
 
 Leave the mamba environment:
 
