@@ -16,13 +16,18 @@ Using a package manager is benefitial because it:
 - Keeps your system organized.
 
 ### Using environment.yml
-If you have mamba:
-```mamba env create -f environment.yml```
-If you have conda:
-```conda env create -f environment.yml```
+1. Copy the [environment.yml](https://github.com/carocamargo/SLSC_SWOT/blob/main/environment.yml) file in your working directory.
+2. Create your environment
+  If you have mamba:
+  ```mamba env create -f environment.yml```
+  If you have conda:
+  ```conda env create -f environment.yml```
+You can then skip the [python set up](dependencies))
+4. Activate it:
+```conda activate SLCS_SWOT```
 
-
-## Install python packages
+(dependencies)=
+## Python Set Up
 Next, we'll install python packages needed for the tutorial:
 
 **Required packages**
