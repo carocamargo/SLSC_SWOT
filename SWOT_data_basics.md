@@ -28,9 +28,14 @@ There are two types of SWOT products:
    - hydrology products: High-rate hydrology datasets, including river and lake vector data in shapefiles, and raster, pixel cloud and pixel vector data in netCDF.
    - ocean products: Low-rate observations of oceans
 
+ link to the PDD for the L2 SSH data from which the L3 data is derived. The processing chain is essentially that JPL processes the interferograms to produce L2, and then the from there AVISO can run their algorithms and distribute L3. I’ll let you decide how much info you want to include but a basic description of the product is provided in section 2 of the PDD, which you could boil down to a sentence so that the L2 line is not completely blank.
 ## Levels 
 - L1: raw data
-- L2
+- L2: The L2_LR_SSH product provides data from the low-rate (LR) data stream of the SWOT
+KaRIn instrument. KaRIn LR data are available continuously and globally, although LR
+measurements are designed primarily for ocean surfaces and may be of limited use over other
+surfaces. The L2_LR_SSH product is generated in response to SWOT project science
+requirements. The processing chain is essentially that JPL processes the interferograms to produce L2, and then the from there AVISO can run their algorithms and distribute L3. The L3 data is derived from the [L2 SSH data](https://podaac.jpl.nasa.gov/dataset/SWOT_L2_LR_SSH_D). See [product description document](https://deotb6e7tfubr.cloudfront.net/s3-edaf5da92e0ce48fb61175c28b67e95d/podaac-ops-cumulus-docs.s3.us-west-2.amazonaws.com/web-misc/swot_mission_docs/pdd/D-56407_SWOT_Product_Description_L2_LR_SSH_20250224a_RevC_clean_sig.pdf?A-userid=None&Expires=1752190027&Signature=wJAJIjrutT01DFmNpDysmtJ9bLPzzK2t3xKq2EIv48Wj4adtd24IIz5Zdw4xll8iIOPpozuLj6EZv-dPXncVzzzAc5d8ZQ0m0ogNyvSy9DwvNGcYar6Y-4XtIi9sIQbYpsTSE6qTt05TOPTuTYp8sFZpdF90h199-nhoynFz8QLvs79Ou9zxdfZP0XNZCzT~HTxMANILKpgIreZ-eiImUa6Yq61GCLaA1RMOUGpJ4B1hXm34OD8uNSKqIqliGldd3ZvRjefWm1MHUmGe0UnEW9QCRNM2tpXIxX7f4yPUB3bl295Gh5FVVLY3jE76iDdqwzIXja-6UtdTo~M8WOuqVg__&Key-Pair-Id=KKRTCG9XZB0DM) for detailed information. 
 - L3:    
  The Value-added compared to SWOT L2 KaRIn (L2_LR_SSH) products are:
      - State of the art research-grade upgrades (incl. very recent & submitted papers)
