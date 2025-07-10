@@ -69,7 +69,8 @@ mamba install -c conda-forge geopandas shapely ftplib getpass
 
 (This should also work if you replace ```mamba``` with ```conda```, but will take longer). Note the "```-c conda-forge```" flag tells the package manager to download the packages located from the conda-forge channel. 
 
-```{note}
+> **Note:**
 If you're using conda and the ```conda install ...``` / ```conda env update ...``` commands are taking a long time, you could try [updating the solver to "libmamba"](https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community).
 If this doesn't work, you could also try setting the channel priority to flexible, with ```conda config --set channel_priority flexible```.
-```
+
+
