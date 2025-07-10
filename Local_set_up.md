@@ -22,7 +22,7 @@ Using a package manager is benefitial because it:
   ```mamba env create -f environment.yml```
   If you have conda:
   ```conda env create -f environment.yml```
-You can then skip the [python set up](dependencies))
+You can then skip the [#python-set-up](#python-set-up))
 4. Activate it:
 ```conda activate SLCS_SWOT```
 
