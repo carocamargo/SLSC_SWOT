@@ -1,7 +1,7 @@
 Set up instructions have been modified from [WHOI CMIP Tutorial](https://theo.earth/whoi-climate-tutorial_2025/pages/setup/setup_venv.html)
 
 # Python / virtual environment
-First, we'll create a "virtual environment" for the class, which contains python and associated software packages (if you're comfortable with python/virtual environments, feel free to skip ahead to [software dependencies](#python-set-up)). 
+First, we'll create a "virtual environment", which contains python and associated software packages (if you're comfortable with python/virtual environments, feel free to skip ahead to [software dependencies](#python-set-up)). 
 
 ## (optional) Set up virtual environment
 ### Manually
