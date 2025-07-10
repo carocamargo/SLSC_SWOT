@@ -1,7 +1,7 @@
 Set up instructions have been modified from [WHOI CMIP Tutorial](https://theo.earth/whoi-climate-tutorial_2025/pages/setup/setup_venv.html)
-# Python / virtual environment
-First, we'll create a "virtual environment" for the class, which contains python and associated software packages (if you're comfortable with python/virtual environments, feel free to skip ahead to [software dependencies](dependencies)). 
 
+# Python / virtual environment
+First, we'll create a "virtual environment" for the class, which contains python and associated software packages (if you're comfortable with python/virtual environments, feel free to skip ahead to [software dependencies](#python-set-up)). 
 
 ## (optional) Set up virtual environment
 ### Manually
@@ -22,7 +22,7 @@ Using a package manager is benefitial because it:
   ```mamba env create -f environment.yml```
   If you have conda:
   ```conda env create -f environment.yml```
-You can then skip the [#python-set-up](#python-set-up))
+You can then skip the [python-set-up](#python-set-up))
 4. Activate it:
 ```conda activate SLCS_SWOT```
 
@@ -70,5 +70,6 @@ mamba install -c conda-forge geopandas shapely ftplib getpass
 (This should also work if you replace ```mamba``` with ```conda```, but will take longer). Note the "```-c conda-forge```" flag tells the package manager to download the packages located from the conda-forge channel. 
 
 ```{note}
-If you're using conda and the ```conda install ...``` / ```conda env update ...``` commands are taking a long time, you could try [updating the solver to "libmamba"](https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community). If this doesn't work, you could also try setting the channel priority to flexible, with ```conda config --set channel_priority flexible``` (thanks to Lilli Enders for suggesting this).
+If you're using conda and the ```conda install ...``` / ```conda env update ...``` commands are taking a long time, you could try [updating the solver to "libmamba"](https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community).
+If this doesn't work, you could also try setting the channel priority to flexible, with ```conda config --set channel_priority flexible```.
 ```
