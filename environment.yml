@@ -12,6 +12,7 @@ dependencies:
   - xarray
   - zarr<3
   - fsspec
+  - tqdm
   - geopandas
   - shapely
   - ftplib
